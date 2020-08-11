@@ -10,4 +10,4 @@ I have located all 3 drivers for Chrome version 84 inside of the drivers folder 
 ##Running:
 Run command:
            
-            python3 covidInfo.py
+            python covidInfo.py
