@@ -13,8 +13,8 @@ total_cases_ON, new_cases_ON, active_cases_ON, tests_done_ON = scrapper.scrape_o
 
 print('Ontario:')
 print('Total Cases:', total_cases_ON)
-print('New Cases:', new_cases_ON)
 print('Active Cases:', active_cases_ON)
-print('Tests Done:', tests_done_ON)
+print('New Cases Today:', new_cases_ON)
+print('Tests Done Today:', tests_done_ON)
 print('------------------------------------')
 
