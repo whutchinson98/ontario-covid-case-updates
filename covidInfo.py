@@ -5,16 +5,22 @@ load_dotenv()
 
 PATH_TO_CHROME_DRIVER = os.getenv("DRIVER_PATH")
 
-print('------- Covid 19 Information -------')
 
-scrapper = CovidDataScraper(PATH_TO_CHROME_DRIVER)
+def run():
+    print('------- Covid 19 Information -------')
 
-total_cases_ON, new_cases_ON, active_cases_ON, tests_done_ON = scrapper.scrape_ontario()
+    scrapper = CovidDataScraper(PATH_TO_CHROME_DRIVER)
 
-print('Ontario:')
-print('Total Cases:', total_cases_ON)
-print('Active Cases:', active_cases_ON)
-print('New Cases Today:', new_cases_ON)
-print('Tests Done Today:', tests_done_ON)
-print('------------------------------------')
+    total_cases_ON, new_cases_ON, active_cases_ON, tests_done_ON = scrapper.scrape_ontario()
+
+    print('Ontario:')
+    print('Total Cases:', total_cases_ON)
+    print('Active Cases:', active_cases_ON)
+    print('New Cases Today:', new_cases_ON)
+    print('Tests Done Today:', tests_done_ON)
+    print('------------------------------------')
+
+
+if __name__ == "__main__":
+    run()
 
